@@ -1,0 +1,65 @@
+
+/* Slide from left and right */
+
+.slideFromRight {
+    animation: slide-from-right .5s;
+}
+
+@keyframes slide-from-right {
+  from {
+    opacity: 0;
+    transform: translate3d(120%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.slideFromLeft {
+    animation: slide-from-left .5s;
+}
+
+@keyframes slide-from-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+
+/* Slide from bottom and top */
+
+.slideFromBottom {
+  animation: slide-from-bottom .5s;
+}
+
+@keyframes slide-from-bottom {
+from {
+  opacity: 0;
+  transform: translate3d(0, 100vh, 0);
+}
+to {
+  opacity: 1;
+  transform: translate3d(0%, 0, 0);
+}
+}
+
+.slideFromTop {
+  animation: slide-from-top .5s;
+}
+
+@keyframes slide-from-top {
+from {
+  opacity: 0;
+  transform: translate3d(0, -100vh, 0);
+}
+to {
+  opacity: 1;
+  transform: translate3d(0%, 0, 0);
+}
+}

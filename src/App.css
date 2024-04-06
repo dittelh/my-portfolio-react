@@ -1,0 +1,101 @@
+@font-face {
+  font-family: Jura;
+  src: url('./assets/fonts/JURA-VARIABLEFONT_WGHT.TTF');
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('./assets/fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: InterSemiBoldItalic;
+  src: url('./assets/fonts/inter-semi-bold-italic.otf');
+}
+
+body {
+  transition: background-color 0.5s ease;
+  /* overflow: hidden; */
+}
+
+.container {
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline {
+  font-family: Jura;
+  text-transform: uppercase;
+}
+
+.h2-custom {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.h3-custom {
+  font-family: InterSemiBoldItalic;
+  color: #357C24;
+}
+
+.h2-details {
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.paragraph {
+  font-family: Inter;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blob-green {
+  background-color: #c7edbe;
+}
+
+.blob-purple {
+  background-color: #d1c3ee;
+}
+
+.blob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Inter;
+  width: 9rem;
+  height: 7rem;
+  border-width: 0;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 7s linear infinite;
+}
+
+.blob:hover {
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+}
+
+.marginBottom{
+  padding-bottom: 10rem;
+}
