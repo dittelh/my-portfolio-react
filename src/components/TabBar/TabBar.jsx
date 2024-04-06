@@ -68,9 +68,6 @@ const TabBar = () => {
   useEffect(() => {
     const setTabPosition = () => {
       const currentTab = tabsRef.current[activeTabIndex];
-      console.log(currentTab);
-      console.log(currentTab.offsetLeft);
-      console.log(currentTab.clientWidth);
       setTabUnderlineLeft(currentTab.offsetLeft);
       setTabUnderlineWidth(currentTab.clientWidth);
     };
@@ -83,7 +80,7 @@ const TabBar = () => {
     setTimeout(() => {
       setTabPosition();
     }, 60);
-  }, [activeTabIndex]);
+  }, [activeTabIndex, location.pathname]);
 
   const handleTabClick = (index, tab) => {
     setActiveTabIndex(index);

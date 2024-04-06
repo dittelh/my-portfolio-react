@@ -10,14 +10,12 @@ export const ThemeProvider = ({ children }) => {
     setTheme(newTheme);
     setThemeColor(newThemeColor);
     document.body.style = 'background: ' + newThemeColor;
-    console.log('theme')
-
+    document.body.className = '';
   };
 
   const changeBackgroundImage = (className) => {
     document.body.style.background = null;
     document.body.classList.add(className);
-    console.log('background')
   }
 
   const value = {

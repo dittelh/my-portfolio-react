@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div
       className={
-        !comingFromLeft.includes(location.state.prevLocation)
+        !comingFromLeft.includes(location.state?.prevLocation)
           ? 'slideFromLeft'
           : 'slideFromRight'
       }
