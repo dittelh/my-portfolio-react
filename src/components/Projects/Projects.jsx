@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useEffect, useContext } from 'react';
 import '../Animations.css';
+import './Projects.css';
 import { useLocation, Link } from 'react-router-dom';
+import { ThemeContext } from '../../contexts/ThemeContext';
 
 const Projects = () => {
   const location = useLocation();
   const comingFromLeft = ['/', '/tools'];
+
+  const theme = useContext(ThemeContext);
+
+  useEffect(() => {
+    const toolsSlideDirection = !comingFromLeft.includes(
+      location.state?.prevLocation
+    )
+      ? location.state?.prevLocation === '/projects-details'
+        ? 'projectsBackgroundImgTop'
+        : 'projectsBackgroundImgLeft'
+      : 'projectsBackgroundImgRight';
+
+    theme.changeTheme(2, 'rgba(237, 233, 245, 1)');
+    theme.changeBackgroundImage(toolsSlideDirection);
+  }, []);
 
   return (
     <div

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './App.css';
 import TabBar from './components/TabBar/TabBar';
 import Home from './components/Home/Home';
@@ -9,28 +9,23 @@ import Contact from './components/Contact/Contact';
 import ToolsDetails from './components/Tools/ToolsDetails/ToolsDetails';
 import ProjectsDetails from './components/Projects/ProjectsDetails/ProjectsDetails';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { ThemeContext } from './contexts/ThemeContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const theme = useContext(ThemeContext);
-
   return (
     <Router>
-      <div className={'background-' + theme}>
-        <ThemeProvider>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/tools" element={<Tools />} />
-            <Route path="/tools-details" element={<ToolsDetails />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/projects-details" element={<ProjectsDetails />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <TabBar />
-        </ThemeProvider>
-      </div>
+      <ThemeProvider>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path="/tools-details" element={<ToolsDetails />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects-details" element={<ProjectsDetails />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <TabBar />
+      </ThemeProvider>
     </Router>
   );
 }

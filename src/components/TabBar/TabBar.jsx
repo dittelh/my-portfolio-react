@@ -73,7 +73,7 @@ const TabBar = () => {
     };
 
     const tab = allTabs.find((tab) => tab.tabIndex === activeTabIndex);
-    if (location.pathname !== '/tools-details') {
+    if (!location.pathname.includes('tools') && !location.pathname.includes('project')) {
       theme.changeTheme(tab.id, tab.themeColor);
     }
 
@@ -84,7 +84,9 @@ const TabBar = () => {
 
   const handleTabClick = (index, tab) => {
     setActiveTabIndex(index);
-    theme.changeTheme(tab.id, tab.themeColor);
+    if (!location.pathname.includes('tools') && !location.pathname.includes('project')) {
+      theme.changeTheme(tab.id, tab.themeColor);
+    }
     navigate(tab.route, { state: { prevLocation: location.pathname } });
   };
 

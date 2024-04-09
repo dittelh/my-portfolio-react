@@ -1,0 +1,50 @@
+/* .projectBackgroundImg{
+    background-image: url('../../assets/img/project_phone.svg');
+    background-size: cover;
+    z-index: -10;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    overflow: hidden;
+} */
+
+.projectsBackgroundImgLeft{
+    background-image: url('../../assets/img/project_phone.svg');
+    background-size: cover;
+    z-index: -10;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    overflow: hidden;
+    animation: slide-from-left 0.5s;
+}
+
+.projectsBackgroundImgRight{
+    background-image: url('../../assets/img/project_phone.svg');
+    background-size: cover;
+    z-index: -10;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    overflow: hidden;
+    animation: slide-from-right 0.5s;
+}
+
+.projectsBackgroundImgTop{
+    background-image: url('../../assets/img/project_phone.svg');
+    background-size: cover;
+    z-index: -10;
+    position: absolute;
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    overflow: hidden;
+    animation: slide-from-top 0.5s;
+}

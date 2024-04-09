@@ -13,10 +13,12 @@
   top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: fade-in 2s;
+  z-index: 10;
 }
 
 .backBtnPurple {
-  background-color: #664F98;
+  background-color: #664f98;
 }
 
 .backBtn:hover {
@@ -39,4 +41,147 @@
   to {
     transform: translate3d(0, 8px, 0);
   }
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.containerProjectImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buddysImg {
+  background-image: url('../../../assets/img/buddys.svg');
+  width: 80vw;
+  height: 65vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  transition: opacity .5s ease-in;
+
+}
+
+.buddysImg:hover {
+  background-image: url('../../../assets/img/buddysDarker.svg');
+}
+
+.tipsKuponImg {
+  background-image: url('../../../assets/img/tipsKupon.svg');
+  width: 80vw;
+  height: 65vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  transition: opacity .5s ease-in;
+}
+
+.tipsKuponImg:hover {
+  background-image: url('../../../assets/img/tipsKuponDark.svg');
+}
+
+.froggImg {
+  background-image: url('../../../assets/img/frogg.svg');
+  width: 80vw;
+  height: 65vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  transition: opacity .5s ease-in;
+
+}
+
+.froggImg:hover {
+  background-image: url('../../../assets/img/froggDarker.svg');
+}
+
+.todosImg {
+  background-image: url('../../../assets/img/todos_3.svg');
+  width: 80vw;
+  height: 65vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  transition: opacity .5s ease-in;
+}
+
+.todosImg:hover {
+  background-image: url('../../../assets/img/todosDarker.svg');
+}
+
+.title {
+  font-family: Inter;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+  width: 80%;
+  padding-bottom: 1rem;
+}
+
+.containerProjectImg:hover .title {
+  opacity: 1;
+}
+
+.projectBtn {
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease-in;
+}
+
+.projectBtn a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  font-family: Jura;
+  color: white;
+  border: solid 1px white;
+  border-radius: 10px;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.containerProjectImg:hover .projectBtn {
+  opacity: 1;
+}
+
+.projectBtn:hover {
+  background: white;
+  border-radius: 10px;
+  padding: 12px 0px;
+}
+
+.projectBtn a:hover {
+  color: black;
+  font-weight: 900;
+}
+
+
+
+
+
+
+.purpleBackground {
+  background-image: url('../../../assets/img/purplePhone.svg');
+  background-size: cover;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 175%;
+  animation: slide-from-bottom 0.5s;
+  overflow: hidden;
 }
