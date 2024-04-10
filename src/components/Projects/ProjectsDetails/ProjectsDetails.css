@@ -65,7 +65,6 @@
   background-size: cover;
   border-radius: 10px;
   transition: opacity .5s ease-in;
-
 }
 
 .buddysImg:hover {
@@ -139,10 +138,7 @@
   text-align: center;
   opacity: 0;
   transition: opacity 0.35s ease-in;
-}
-
-.projectBtn a {
-  width: 200px;
+  width: 100px;
   padding: 12px 48px;
   text-align: center;
   font-family: Jura;
@@ -151,6 +147,8 @@
   border-radius: 10px;
   z-index: 1;
   text-transform: uppercase;
+  text-decoration: none;
+
 }
 
 .containerProjectImg:hover .projectBtn {
@@ -158,15 +156,11 @@
 }
 
 .projectBtn:hover {
-  background: white;
-  border-radius: 10px;
-  padding: 12px 0px;
-}
-
-.projectBtn a:hover {
+  background-color: white;
   color: black;
   font-weight: 900;
 }
+
 
 
 
@@ -184,4 +178,59 @@
   height: 175%;
   animation: slide-from-bottom 0.5s;
   overflow: hidden;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 10rem;
+  }
+
+  .buddysImg {
+    background-image: url('../../../assets/img/buddys.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: opacity .5s ease-in;
+  }
+  
+  .tipsKuponImg {
+    background-image: url('../../../assets/img/tipsKupon.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    transition: opacity .5s ease-in;
+  }
+  
+  .froggImg {
+    background-image: url('../../../assets/img/frogg.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    transition: opacity .5s ease-in;
+  
+  }
+  
+  .todosImg {
+    background-image: url('../../../assets/img/todos_3.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    transition: opacity .5s ease-in;
+  }
 }

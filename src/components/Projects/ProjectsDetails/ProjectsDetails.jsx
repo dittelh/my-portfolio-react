@@ -22,52 +22,67 @@ const ProjectsDetails = () => {
       <div className="slideFromBottom">
         <h2 className="headline h2-custom h2-details">Projects</h2>
         <div className="projectsContainer paddingBottom">
-
           <div className="containerProjectImg buddysImg">
-            {/* <img className="projectsImg" src={Buddys} alt="Buddys" /> */}
             <p className="title">
               Buddys was a project made for school. It is build with Angular,
               Ionic and Firestore.
             </p>
-            <div className="overlay"></div>
-            <div className="projectBtn">
-              <a target='_blank' href="https://buddys.dittelh.dk/login"> Visit </a>
-            </div>
+            <a
+              className="projectBtn"
+              target="_blank"
+              href="https://buddys.dittelh.dk/login"
+            >
+              Visit
+            </a>
           </div>
 
           <div className="containerProjectImg tipsKuponImg">
-            {/* <img className="projectsImg" src={tipsKupon} alt="TipsKupon" /> */}
             <p className="title">
-              An online tipsmanager for football euro 2024 with an admin panel to manage coupons and matches.
+              An online tipsmanager for football euro 2024 with an admin panel
+              to manage coupons and matches.
             </p>
-            {/* <div className="overlay"></div> */}
-            <div className="projectBtn">
-              <a target='_blank' href="https://tips.thch.dk/"> Visit </a>
-            </div>
+
+            <a
+              className="projectBtn"
+              target="_blank"
+              href="https://tips.thch.dk/"
+            >
+              Visit
+            </a>
           </div>
 
           <div className="containerProjectImg froggImg">
             {/* <img className="projectsImg" src={frogg} alt="Frogg" /> */}
             <p className="title">
-              FROGG was made for my multimedia exam. It is build with HTML, CSS and JavaScript.
+              FROGG was made for my multimedia exam. It is build with HTML, CSS
+              and JavaScript.
             </p>
             {/* <div className="overlay"></div> */}
-            <div className="projectBtn">
-              <a target='_blank' href="https://frogg.dittelh.dk/"> Visit </a>
-            </div>
+              <a
+                className="projectBtn"
+                target="_blank"
+                href="https://frogg.dittelh.dk/"
+              >
+                Visit
+              </a>
           </div>
 
           <div className="containerProjectImg todosImg">
             {/* <img className="projectsImg" src={todos} alt="Todos" /> */}
             <p className="title">
-              It's an online to do list where you can share lists with other members and both add and complete tasks.
+              It's an online to do list where you can share lists with other
+              members and both add and complete tasks.
             </p>
             {/* <div className="overlay"></div> */}
-            <div className="projectBtn">
-              <a target='_blank' href="https://todos.dk/login"> Visit </a>
-            </div>
+            <a
+              className="projectBtn"
+              target="_blank"
+              href="https://todos.dk/login"
+            >
+              Visit
+            </a>
           </div>
-
+          
         </div>
       </div>
       <Link to={'/projects'} state={{ prevLocation: location.pathname }}>
