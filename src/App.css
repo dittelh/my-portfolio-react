@@ -37,7 +37,7 @@ body {
 
 .h3-custom {
   font-family: InterSemiBoldItalic;
-  color: #357C24;
+  color: #357c24;
 }
 
 .h2-details {
@@ -96,6 +96,16 @@ a {
   }
 }
 
-.paddingBottom{
+.paddingBottom {
   padding-bottom: 10rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .paragraph {
+    font-size: 1rem;
+  }
+
+  body {
+    padding: 0 9rem;
+  }
 }

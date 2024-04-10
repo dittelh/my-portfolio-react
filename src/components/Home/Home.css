@@ -9,3 +9,23 @@
     font-size: 1.25rem;
     margin-top: 3.5rem;
 }
+
+@media only screen and (min-width: 768px) {
+    .homeContainer{
+        display: flex;
+        gap: 10rem;
+        margin-top: 6rem;
+    }
+
+    .wavingDitte{
+        width: 31.25rem;
+    }
+
+    .customHeadline{
+        font-size: 2.25rem;
+    }
+
+    .textHome{
+        /* padding-right: 20rem; */
+    }
+}
