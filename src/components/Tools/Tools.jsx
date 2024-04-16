@@ -28,6 +28,7 @@ const Tools = () => {
 
     theme.changeTheme(1, 'rgba(242, 250, 240, 1)');
     theme.changeBackgroundImage(toolsSlideDirection);
+    console.log(toolsSlideDirection);
   }, []);
 
   return (

@@ -1,31 +1,52 @@
-.wavingDitte{
+.wavingDitte {
+  width: 90vw;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customHeadline {
+  font-size: 1.25rem;
+  margin-top: 3.5rem;
+}
+
+@media only screen and (min-height: 667px) {
+  .wavingDitte {
+    width: 60vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Ipad */
+
+/* @media only screen and (min-device-width: 667px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .wavingDitte {
     width: 90vw;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.customHeadline{
+  .customHeadline {
     font-size: 1.25rem;
     margin-top: 3.5rem;
-}
+  }
+} */
 
-@media only screen and (min-width: 768px) {
-    .homeContainer{
-        display: flex;
-        gap: 10rem;
-        margin-top: 6rem;
-    }
+@media only screen and (min-width: 1024px) {
+  .homeContainer {
+    display: flex;
+    gap: 10rem;
+    margin-top: 6rem;
+  }
 
-    .wavingDitte{
-        width: 31.25rem;
-    }
+  .wavingDitte {
+    width: 31.25vw;
+  }
 
-    .customHeadline{
-        font-size: 2.25rem;
-    }
-
-    .textHome{
-        /* padding-right: 20rem; */
-    }
+  .customHeadline {
+    font-size: 2.25rem;
+  }
 }

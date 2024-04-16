@@ -30,12 +30,21 @@
   justify-content: center;
 }
 
-
 @media only screen and (min-width: 768px) {
-  .contactContainer{
+  .contactContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mail,
+  .CV,
+  .gitHub,
+  .linkedIn {
+    width: 6rem !important;
   }
 
   .contactImgContainer {
@@ -46,5 +55,22 @@
     flex-wrap: nowrap;
     justify-content: center;
   }
+}
 
+@media only screen and (min-height: 667px) {
+  .mail,
+  .CV,
+  .gitHub,
+  .linkedIn {
+    width: 4rem;
+  }
+
+  .contactImgContainer {
+    width: 50vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

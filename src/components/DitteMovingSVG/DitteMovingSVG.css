@@ -136,3 +136,24 @@ svg {
 .ditteSVG {
   margin-top: 0rem;
 }
+
+
+@media only screen and (min-width: 768px) {
+  svg {
+    flex-shrink: 0;
+    width: 555px;
+    max-width: 30vw;
+  }
+}
+
+
+@media only screen and (min-height: 667px) {
+  svg {
+    flex-shrink: 0;
+    width: 455px;
+    max-width: 80vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -11,7 +11,7 @@ const Projects = () => {
   const theme = useContext(ThemeContext);
 
   useEffect(() => {
-    const toolsSlideDirection = !comingFromLeft.includes(
+    const projectsSlideDirection = !comingFromLeft.includes(
       location.state?.prevLocation
     )
       ? location.state?.prevLocation === '/projects-details'
@@ -20,7 +20,8 @@ const Projects = () => {
       : 'projectsBackgroundImgRight';
 
     theme.changeTheme(2, 'rgba(237, 233, 245, 1)');
-    theme.changeBackgroundImage(toolsSlideDirection);
+    theme.changeBackgroundImage(projectsSlideDirection);
+    console.log(projectsSlideDirection);
   }, []);
 
   return (

@@ -10,12 +10,15 @@ export const ThemeProvider = ({ children }) => {
   const changeTheme = (newTheme, newThemeColor) => {
     setTheme(newTheme);
     setThemeColor(newThemeColor);
-    document.body.style = 'background: ' + newThemeColor;
+    document.body.style = 'overflow-x: hidden; background: ' + newThemeColor;
+    // document.body.style = 'overflow-x: hidden';
     document.body.className = '';
     setBackgroundClass('');
   };
 
   const changeBackgroundImage = (className) => {
+    // setBackgroundClass('');
+
     setBackgroundClass(className);
   };
 

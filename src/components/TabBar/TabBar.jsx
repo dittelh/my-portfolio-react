@@ -80,6 +80,7 @@ const TabBar = () => {
     setTimeout(() => {
       setTabPosition();
     }, 60);
+    
   }, [activeTabIndex, location.pathname]);
 
   const handleTabClick = (index, tab) => {

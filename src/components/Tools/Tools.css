@@ -1,84 +1,56 @@
-/* .toolsBackgroundImgContainer {
+.toolsBackgroundImgLeft {
+  background-image: url('../../assets/img/tools_phone.svg');
+  background-size: cover;
+  z-index: -10;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: -9;
+  left: -10%;
   top: 0;
-  left: 0;
+  width: 110%;
+  height: 100%;
+  overflow: hidden;
+  animation: slide-from-left-2 0.5s;
 }
 
-.toolsImg {
+.toolsBackgroundImgRight {
+  background-image: url('../../assets/img/tools_phone.svg');
+  background-size: cover;
+  z-index: -10;
   position: absolute;
+  left: -10%;
+  top: 0;
+  width: 110%;
+  height: 100%;
+  overflow: hidden;
+  animation: slide-from-right 0.5s;
 }
 
-.TagImg {
-  top: -15%;
-  left: -40%;
+.toolsBackgroundImgTop {
+  background-image: url('../../assets/img/tools_phone.svg');
+  background-size: cover;
+  z-index: -10;
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 110%;
+  height: 100%;
+  overflow: hidden;
+  animation: slide-from-top 0.5s;
 }
 
-.ComputerImg {
-}
-
-.DataImg {
-}
-
-.ErrorImg {
-}
-
-.SemiImg {
-}
-
-.BracketImg {
-} */
-
-
-/* .toolsBackgroundImg{
-    background-image: url('../../assets/img/tools_phone.svg');
-    background-size: cover;
-    z-index: -10;
-    position: absolute;
-    left: -10%;
+@media only screen and (min-width: 768px) {
+  .toolsBackgroundImgLeft {
+    background-image: url('../../assets/img/tools_web.svg');
+    left: 0;
     top: 0;
-    width: 110%;
-    height: 100%;
-    overflow: hidden;
-} */
+    width: 100%;
+    height: 100vh;
+  }
 
-.toolsBackgroundImgLeft{
-    background-image: url('../../assets/img/tools_phone.svg');
-    background-size: cover;
-    z-index: -10;
-    position: absolute;
-    left: -10%;
+  .toolsBackgroundImgRight {
+    background-image: url('../../assets/img/tools_web.svg');
+    left: 0;
     top: 0;
-    width: 110%;
-    height: 100%;
-    overflow: hidden;
-    animation: slide-from-left 0.5s;
-}
-
-.toolsBackgroundImgRight{
-    background-image: url('../../assets/img/tools_phone.svg');
-    background-size: cover;
-    z-index: -10;
-    position: absolute;
-    left: -10%;
-    top: 0;
-    width: 110%;
-    height: 100%;
-    overflow: hidden;
-    animation: slide-from-right 0.5s;
-}
-
-.toolsBackgroundImgTop{
-    background-image: url('../../assets/img/tools_phone.svg');
-    background-size: cover;
-    z-index: -10;
-    position: absolute;
-    left: -10%;
-    top: 0;
-    width: 110%;
-    height: 100%;
-    overflow: hidden;
-    animation: slide-from-top 0.5s;
+    width: 100%;
+    height: 100vh;
+  }
 }

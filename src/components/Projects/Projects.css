@@ -1,15 +1,3 @@
-/* .projectBackgroundImg{
-    background-image: url('../../assets/img/project_phone.svg');
-    background-size: cover;
-    z-index: -10;
-    position: absolute;
-    left: -10%;
-    top: 0;
-    width: 110%;
-    height: 100%;
-    overflow: hidden;
-} */
-
 .projectsBackgroundImgLeft{
     background-image: url('../../assets/img/project_phone.svg');
     background-size: cover;
@@ -33,7 +21,7 @@
     width: 110%;
     height: 100%;
     overflow: hidden;
-    animation: slide-from-right 0.5s;
+    animation: slide-from-right-2 0.5s;
 }
 
 .projectsBackgroundImgTop{
@@ -47,4 +35,22 @@
     height: 100%;
     overflow: hidden;
     animation: slide-from-top 0.5s;
+}
+
+@media only screen and (min-width: 768px) { 
+    .projectsBackgroundImgLeft{
+        background-image: url('../../assets/img/project_web.svg');
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .projectsBackgroundImgRight{
+        background-image: url('../../assets/img/project_web.svg');
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

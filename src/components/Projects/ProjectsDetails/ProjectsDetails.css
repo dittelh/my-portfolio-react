@@ -174,7 +174,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 110%;
   height: 175%;
   animation: slide-from-bottom 0.5s;
   overflow: hidden;
@@ -236,5 +236,12 @@
 
   .purpleBackground {
     height: 100%;
+  }
+}
+
+
+@media only screen and (min-height: 667px) {
+  .purpleBackground {
+    height: 215%;
   }
 }
