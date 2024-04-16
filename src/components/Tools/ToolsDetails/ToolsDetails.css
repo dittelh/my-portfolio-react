@@ -81,4 +81,8 @@ li {
     justify-content: space-around;
     margin-top: 10rem;
   }
+
+  .greenBackground {
+    height: 100%;
+  }
 }

@@ -233,4 +233,8 @@
     background-position: center;
     transition: opacity .5s ease-in;
   }
+
+  .purpleBackground {
+    height: 100%;
+  }
 }
