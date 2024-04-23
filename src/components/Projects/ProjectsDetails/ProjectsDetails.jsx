@@ -22,20 +22,6 @@ const ProjectsDetails = () => {
       <div className="slideFromBottom">
         <h2 className="headline h2-custom h2-details">Projects</h2>
         <div className="projectsContainer paddingBottom">
-          <div className="containerProjectImg buddysImg">
-            <p className="title">
-              Buddys was a project made for school. It is build with Angular,
-              Ionic and Firestore.
-            </p>
-            <a
-              className="projectBtn"
-              target="_blank"
-              href="https://buddys.dittelh.dk/login"
-            >
-              Visit
-            </a>
-          </div>
-
           <div className="containerProjectImg tipsKuponImg">
             <p className="title">
               An online tipsmanager for football euro 2024 with an admin panel
@@ -58,13 +44,13 @@ const ProjectsDetails = () => {
               and JavaScript.
             </p>
             {/* <div className="overlay"></div> */}
-              <a
-                className="projectBtn"
-                target="_blank"
-                href="https://frogg.dittelh.dk/"
-              >
-                Visit
-              </a>
+            <a
+              className="projectBtn"
+              target="_blank"
+              href="https://frogg.dittelh.dk/"
+            >
+              Visit
+            </a>
           </div>
 
           <div className="containerProjectImg todosImg">
@@ -82,7 +68,20 @@ const ProjectsDetails = () => {
               Visit
             </a>
           </div>
-          
+
+          <div className="containerProjectImg buddysImg">
+            <p className="title">
+              Buddys was a project made for school. It is build with Angular,
+              Ionic and Firestore.
+            </p>
+            <a
+              className="projectBtn"
+              target="_blank"
+              href="https://buddys.dittelh.dk/login"
+            >
+              Visit
+            </a>
+          </div>
         </div>
       </div>
       <Link to={'/projects'} state={{ prevLocation: location.pathname }}>
