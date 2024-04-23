@@ -76,6 +76,8 @@ a {
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
   overflow: hidden;
   animation: morph 7s linear infinite;
+  color: black;
+  
 }
 
 .blob:hover {

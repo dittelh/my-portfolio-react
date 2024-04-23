@@ -8,6 +8,7 @@ import CV from '../../assets/img/backgroundIcons/cv.svg';
 import github from '../../assets/img/backgroundIcons/github.svg';
 import DitteMovingSVG from '../DitteMovingSVG/DitteMovingSVG';
 
+
 const Contact = () => {
   const location = useLocation();
   const comingFromLeft = ['/', '/tools', '/projects'];

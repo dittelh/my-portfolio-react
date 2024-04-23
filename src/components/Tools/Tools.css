@@ -37,6 +37,16 @@
   animation: slide-from-top 0.5s;
 }
 
+.linkTag {
+  text-decoration: none;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media only screen and (min-width: 768px) {
   .toolsBackgroundImgLeft {
     background-image: url('../../assets/img/tools_web.svg');
@@ -52,5 +62,9 @@
     top: 0;
     width: 100%;
     height: 100vh;
+  }
+
+  .linkTag {
+    width: 10%;
   }
 }

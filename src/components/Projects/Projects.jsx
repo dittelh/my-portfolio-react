@@ -21,7 +21,6 @@ const Projects = () => {
 
     theme.changeTheme(2, 'rgba(237, 233, 245, 1)');
     theme.changeBackgroundImage(projectsSlideDirection);
-    console.log(projectsSlideDirection);
   }, []);
 
   return (
@@ -35,7 +34,7 @@ const Projects = () => {
       }
     >
       <h2 className="headline h2-custom">Projects</h2>
-      <Link to={'/projects-details'}>
+      <Link className='linkTag' to={'/projects-details'}>
         <button className="blob blob-purple">
           CLICK TO <br /> READ MORE!
         </button>

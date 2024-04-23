@@ -64,7 +64,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
-  transition: opacity .5s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .buddysImg:hover {
@@ -79,7 +79,7 @@
   background-size: cover;
   border-radius: 10px;
   background-position: center;
-  transition: opacity .5s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .tipsKuponImg:hover {
@@ -94,8 +94,7 @@
   background-size: cover;
   border-radius: 10px;
   background-position: center;
-  transition: opacity .5s ease-in;
-
+  transition: opacity 0.5s ease-in;
 }
 
 .froggImg:hover {
@@ -110,7 +109,7 @@
   background-size: cover;
   border-radius: 10px;
   background-position: center;
-  transition: opacity .5s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .todosImg:hover {
@@ -148,7 +147,6 @@
   z-index: 1;
   text-transform: uppercase;
   text-decoration: none;
-
 }
 
 .containerProjectImg:hover .projectBtn {
@@ -161,12 +159,6 @@
   font-weight: 900;
 }
 
-
-
-
-
-
-
 .purpleBackground {
   background-image: url('../../../assets/img/purplePhone.svg');
   background-size: cover;
@@ -174,12 +166,11 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 110%;
+  width: 100%;
   height: 175%;
   animation: slide-from-bottom 0.5s;
   overflow: hidden;
 }
-
 
 @media only screen and (min-width: 768px) {
   .projectsContainer {
@@ -197,9 +188,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
-    transition: opacity .5s ease-in;
+    transition: opacity 0.5s ease-in;
   }
-  
+
   .tipsKuponImg {
     background-image: url('../../../assets/img/tipsKupon.svg');
     width: 80vw;
@@ -208,9 +199,9 @@
     background-size: cover;
     border-radius: 10px;
     background-position: center;
-    transition: opacity .5s ease-in;
+    transition: opacity 0.5s ease-in;
   }
-  
+
   .froggImg {
     background-image: url('../../../assets/img/frogg.svg');
     width: 80vw;
@@ -219,10 +210,9 @@
     background-size: cover;
     border-radius: 10px;
     background-position: center;
-    transition: opacity .5s ease-in;
-  
+    transition: opacity 0.5s ease-in;
   }
-  
+
   .todosImg {
     background-image: url('../../../assets/img/todos_3.svg');
     width: 80vw;
@@ -231,14 +221,24 @@
     background-size: cover;
     border-radius: 10px;
     background-position: center;
-    transition: opacity .5s ease-in;
+    transition: opacity 0.5s ease-in;
   }
 
   .purpleBackground {
-    height: 100%;
+    height: 110% !important;
+    width: 105%;
+  }
+
+  .title {
+    font-size: 1vw;
+  }
+
+  .projectBtn {
+    width: 9vw;
+    font-size: 1vw;
+    padding: 10px 10px;
   }
 }
-
 
 @media only screen and (min-height: 667px) {
   .purpleBackground {
