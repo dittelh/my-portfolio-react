@@ -10,10 +10,12 @@ svg {
   box-sizing: border-box;
   display: flex;
   min-height: calc(35vh - 1rem);
-  align-items: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 .smoke-wrap {
@@ -153,7 +155,8 @@ svg {
     width: 455px;
     max-width: 80vw;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: flex-end;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
 }
