@@ -3,10 +3,6 @@ import './ProjectsDetails.css';
 import '../../Animations.css';
 import Arrow from '../../../assets/img/arrow.svg';
 import { Link, useLocation } from 'react-router-dom';
-import Buddys from '../../../assets/img/buddys.png';
-import tipsKupon from '../../../assets/img/tipsKupon.svg';
-import frogg from '../../../assets/img/frogg.svg';
-import todos from '../../../assets/img/todos_3.svg';
 import { ThemeContext } from '../../../contexts/ThemeContext';
 
 const ProjectsDetails = () => {
@@ -38,12 +34,10 @@ const ProjectsDetails = () => {
           </div>
 
           <div className="containerProjectImg froggImg">
-            {/* <img className="projectsImg" src={frogg} alt="Frogg" /> */}
             <p className="title">
               FROGG was made for my multimedia exam. It is build with HTML, CSS
               and JavaScript.
             </p>
-            {/* <div className="overlay"></div> */}
             <a
               className="projectBtn"
               target="_blank"
@@ -54,12 +48,10 @@ const ProjectsDetails = () => {
           </div>
 
           <div className="containerProjectImg todosImg">
-            {/* <img className="projectsImg" src={todos} alt="Todos" /> */}
             <p className="title">
               It's an online to do list where you can share lists with other
               members and both add and complete tasks.
             </p>
-            {/* <div className="overlay"></div> */}
             <a
               className="projectBtn"
               target="_blank"
