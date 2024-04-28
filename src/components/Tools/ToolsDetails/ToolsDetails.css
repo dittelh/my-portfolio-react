@@ -83,7 +83,7 @@ li {
   }
 
   .greenBackground {
-    height: 100%;
+    height: 130%;
   }
 }
 
@@ -92,3 +92,17 @@ li {
     height: 155%;
   }
 }
+
+@media only screen and (min-width: 1300px) {
+  .toolsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10rem;
+  }
+
+  .greenBackground {
+    height: 100%;
+  }
+}
+

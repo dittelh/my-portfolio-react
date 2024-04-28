@@ -19,23 +19,23 @@
   }
 }
 
-/* Ipad */
-
-/* @media only screen and (min-device-width: 667px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .wavingDitte {
-    width: 90vw;
+@media only screen and (min-width: 1024px) {
+  .homeContainer {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .wavingDitte {
+    width: 25vw;
   }
 
   .customHeadline {
-    font-size: 1.25rem;
-    margin-top: 3.5rem;
+    font-size: 1.75rem;
   }
-} */
+}
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1300px) {
   .homeContainer {
     display: flex;
     gap: 10rem;

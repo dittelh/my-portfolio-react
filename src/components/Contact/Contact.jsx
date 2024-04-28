@@ -20,7 +20,7 @@ const Contact = () => {
           : 'slideFromRight'
       }
     >
-      <h2 className="headline h2-custom">Contact</h2>
+      <h2 className="headline h2-custom lessMargin">Contact</h2>
       <div className="contactContainer">
         <div className="contactImgContainer">
           <a href="mailto:dittehansen143@gmail.com">

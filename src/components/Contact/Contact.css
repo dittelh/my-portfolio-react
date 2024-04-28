@@ -44,7 +44,7 @@
   .CV,
   .gitHub,
   .linkedIn {
-    width: 6rem !important;
+    width: 4rem !important;
   }
 
   .contactImgContainer {
@@ -54,6 +54,10 @@
     margin-right: auto;
     flex-wrap: nowrap;
     justify-content: center;
+  }
+
+  .lessMargin{
+    margin-bottom: 0;
   }
 }
 
@@ -71,6 +75,34 @@
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .contactContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mail,
+  .CV,
+  .gitHub,
+  .linkedIn {
+    width: 6rem !important;
+  }
+
+  .contactImgContainer {
+    width: 100vw;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
     justify-content: center;
   }
 }

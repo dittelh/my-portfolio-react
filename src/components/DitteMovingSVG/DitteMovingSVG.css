@@ -12,10 +12,7 @@ svg {
   min-height: calc(35vh - 1rem);
   align-items: flex-end;
   justify-content: flex-end;
-
   overflow: hidden;
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 
 .smoke-wrap {
@@ -135,11 +132,6 @@ svg {
   }
 }
 
-.ditteSVG {
-  margin-top: 0rem;
-}
-
-
 @media only screen and (min-width: 768px) {
   svg {
     flex-shrink: 0;
@@ -156,7 +148,5 @@ svg {
     max-width: 80vw;
     display: flex;
     justify-content: flex-end;
-    /* margin-left: auto;
-    margin-right: auto; */
   }
 }

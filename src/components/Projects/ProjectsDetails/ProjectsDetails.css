@@ -225,7 +225,7 @@
   }
 
   .purpleBackground {
-    height: 110% !important;
+    height: 130% !important;
     width: 105%;
   }
 
@@ -243,5 +243,74 @@
 @media only screen and (min-height: 667px) {
   .purpleBackground {
     height: 215%;
+  }
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .projectsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 10rem;
+  }
+
+  .buddysImg {
+    background-image: url('../../../assets/img/buddys.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease-in;
+  }
+
+  .tipsKuponImg {
+    background-image: url('../../../assets/img/tipsKupon.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    transition: opacity 0.5s ease-in;
+  }
+
+  .froggImg {
+    background-image: url('../../../assets/img/frogg.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    transition: opacity 0.5s ease-in;
+  }
+
+  .todosImg {
+    background-image: url('../../../assets/img/todos.svg');
+    width: 80vw;
+    height: 15vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    transition: opacity 0.5s ease-in;
+  }
+
+  .purpleBackground {
+    height: 110% !important;
+    width: 105%;
+  }
+
+  .title {
+    font-size: 1vw;
+  }
+
+  .projectBtn {
+    width: 9vw;
+    font-size: 1vw;
+    padding: 10px 10px;
   }
 }
