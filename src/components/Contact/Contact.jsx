@@ -1,23 +1,22 @@
-import React from 'react';
-import '../Animations.css';
-import './Contact.css';
-import { useLocation } from 'react-router-dom';
-import Mail from '../../assets/img/backgroundIcons/mail.svg';
-import LinkedIn from '../../assets/img/backgroundIcons/linkedin.svg';
-import CV from '../../assets/img/backgroundIcons/cv.svg';
-import github from '../../assets/img/backgroundIcons/github.svg';
-import DitteMovingSVG from '../DitteMovingSVG/DitteMovingSVG';
-
+import React from "react";
+import "../Animations.css";
+import "./Contact.css";
+import { useLocation } from "react-router-dom";
+import Mail from "../../assets/img/mail.svg";
+import LinkedIn from "../../assets/img/linkedin.svg";
+import CV from "../../assets/img/cv.svg";
+import github from "../../assets/img/github.svg";
+import DitteMovingSVG from "../DitteMovingSVG/DitteMovingSVG";
 
 const Contact = () => {
   const location = useLocation();
-  const comingFromLeft = ['/', '/tools', '/projects'];
+  const comingFromLeft = ["/", "/tools", "/experience"];
   return (
     <div
       className={
         !comingFromLeft.includes(location.state.prevLocation)
-          ? 'slideFromLeft'
-          : 'slideFromRight'
+          ? "slideFromLeft"
+          : "slideFromRight"
       }
     >
       <h2 className="headline h2-custom lessMargin">Contact</h2>
@@ -30,7 +29,7 @@ const Contact = () => {
               alt="Ditte Lykke Hansens mail"
             />
           </a>
-          <a href="https://dittelh.dk/CV.pdf" target="_blank">
+          <a href="https://dittelh.dk/CV_DitteLykkeHansen.pdf" target="_blank">
             <img
               className="contactImg CV"
               src={CV}

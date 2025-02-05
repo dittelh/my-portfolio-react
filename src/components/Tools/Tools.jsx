@@ -1,44 +1,74 @@
-import React, { useEffect, useContext } from 'react';
-import './Tools.css';
-import '../Animations.css';
-import { useLocation, Link } from 'react-router-dom';
-import { ThemeContext } from '../../contexts/ThemeContext';
+import React from "react";
+import "./Tools.css";
+import "../Animations.css";
+import { useLocation } from "react-router-dom";
+import { useScrollPosition } from "../../utils";
 
 const Tools = () => {
+  const [scrollTop, scrollBottom, scrollProps] = useScrollPosition();
   const location = useLocation();
-  const comingFromLeft = ['/'];
+  const comingFromLeft = ["/"];
 
-  const theme = useContext(ThemeContext);
-
-  useEffect(() => {
-    const toolsSlideDirection = !comingFromLeft.includes(
-      location.state?.prevLocation
-    )
-      ? location.state?.prevLocation === '/tools-details'
-        ? 'toolsBackgroundImgTop'
-        : 'toolsBackgroundImgLeft'
-      : 'toolsBackgroundImgRight';
-
-    theme.changeTheme(1, 'rgba(242, 250, 240, 1)');
-    theme.changeBackgroundImage(toolsSlideDirection);
-  }, []);
+  const shadowClass =
+    scrollTop > 0 && scrollBottom > 0
+      ? "scrollTopAndBottomShadow"
+      : scrollTop > 0
+      ? "scrollTopShadow"
+      : scrollBottom > 0
+      ? "scrollBottomShadow"
+      : "noScrollShadow";
 
   return (
     <div
       className={
         !comingFromLeft.includes(location.state?.prevLocation)
-          ? location.state?.prevLocation === '/tools-details'
-            ? 'slideFromTop'
-            : 'slideFromLeft'
-          : 'slideFromRight'
+          ? "slideFromLeft"
+          : "slideFromRight"
       }
     >
       <h2 className="headline h2-custom">Tools</h2>
-      <Link className="linkTag" to={'/tools-details'}>
-        <button className="blob blob-green">
-          CLICK TO <br /> READ MORE!
-        </button>
-      </Link>
+      <div className={`toolsDiv paddingBottom ${shadowClass}`} {...scrollProps}>
+        <div>
+          <h3 className="h3-custom">Frontend</h3>
+          <ul>
+            <li>React, Redux & Saga</li>
+            <li>HTML & CSS</li>
+            <li>Javascript & TypeScript</li>
+            <li>Storybook</li>
+            <li>Wordpress</li>
+            <li>Bootstrap & Tailwind</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="h3-custom">Backend</h3>
+          <ul>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Firebase</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="h3-custom">Graphic Design</h3>
+          <ul>
+            <li>Figma</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Xd</li>
+            <li>Adobe inDesign</li>
+            <li>Adobe After Effects</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="h3-custom">Other</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Scrum</li>
+            <li>CI/CD</li>
+            <li>Cypress E2E</li>
+            <li>Jest - Unittest</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

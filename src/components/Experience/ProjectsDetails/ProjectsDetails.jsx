@@ -1,17 +1,12 @@
-import React, { useContext, useEffect } from 'react';
-import './ProjectsDetails.css';
-import '../../Animations.css';
-import Arrow from '../../../assets/img/arrow.svg';
-import { Link, useLocation } from 'react-router-dom';
-import { ThemeContext } from '../../../contexts/ThemeContext';
+import React, { useContext, useEffect } from "react";
+import "./ProjectsDetails.css";
+import "../../Animations.css";
+import Arrow from "../../../assets/img/arrow.svg";
+import { Link, useLocation } from "react-router-dom";
+import { ThemeContext } from "../../../contexts/ThemeContext";
 
 const ProjectsDetails = () => {
   const location = useLocation();
-
-  const theme = useContext(ThemeContext);
-  useEffect(() => {
-    theme.changeBackgroundImage('purpleBackground');
-  }, []);
 
   return (
     <>
@@ -76,7 +71,7 @@ const ProjectsDetails = () => {
           </div>
         </div>
       </div>
-      <Link to={'/projects'} state={{ prevLocation: location.pathname }}>
+      <Link to={"/experience"} state={{ prevLocation: location.pathname }}>
         <button className="backBtn backBtnPurple">
           <img className="arrow" src={Arrow} alt="Arrow up" />
           UP

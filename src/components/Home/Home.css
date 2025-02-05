@@ -10,6 +10,17 @@
   margin-top: 3.5rem;
 }
 
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.homeContainer p {
+  margin-top: 1rem;
+}
+
 @media only screen and (min-height: 667px) {
   .wavingDitte {
     width: 60vw;
@@ -22,8 +33,9 @@
 @media only screen and (min-width: 1024px) {
   .homeContainer {
     display: flex;
+    flex-direction: row;
     gap: 2rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .wavingDitte {
@@ -38,6 +50,7 @@
 @media only screen and (min-width: 1300px) {
   .homeContainer {
     display: flex;
+    flex-direction: row;
     gap: 10rem;
     margin-top: 6rem;
   }
@@ -48,5 +61,12 @@
 
   .customHeadline {
     font-size: 2.25rem;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-height: 500px) {
+  .homeContainer {
+    gap: 1rem;
+    margin-top: 0rem;
   }
 }

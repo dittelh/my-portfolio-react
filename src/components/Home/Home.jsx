@@ -1,25 +1,25 @@
-import React from 'react';
-import './Home.css';
-import '../Animations.css';
-import { useLocation } from 'react-router-dom';
-import ditteWavingSVG from '../../assets/waving-ditte-long.svg';
+import React from "react";
+import "./Home.css";
+import "../Animations.css";
+import { useLocation } from "react-router-dom";
+import ditteWavingSVG from "../../assets/waving-ditte-long.svg";
 
 const Home = () => {
   const location = useLocation();
-  const comingFromLeft = ['/'];
+  const comingFromLeft = ["/"];
 
   return (
     <div
       className={
         !comingFromLeft.includes(location.state?.prevLocation)
-          ? 'slideFromLeft'
-          : 'slideFromRight'
+          ? "slideFromLeft"
+          : "slideFromRight"
       }
     >
       <div className="homeContainer">
-        <div className="container textHome">
+        <div className="container">
           <h1 className="headline customHeadline">
-            // Hello. <br />
+            // Hello, <br />
             I'm Ditte Lykke Hansen <br />
             and I'm a Fullstack Developer
           </h1>

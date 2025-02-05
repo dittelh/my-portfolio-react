@@ -1,31 +1,23 @@
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useState, useEffect } from "react";
 
 export const ThemeContext = createContext(null);
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('home');
-  const [themeColor, setThemeColor] = useState('rgba(231, 233, 248, 1)');
-  const [backgroundClass, setBackgroundClass] = useState('');
+  const [theme, setTheme] = useState("home");
+  const [themeColor, setThemeColor] = useState("rgba(231, 233, 248, 1)");
+  const [backgroundClass, setBackgroundClass] = useState("");
 
   const changeTheme = (newTheme, newThemeColor) => {
     setTheme(newTheme);
     setThemeColor(newThemeColor);
-    document.body.style = 'overflow-x: hidden; background: ' + newThemeColor;
-    // document.body.style = 'overflow-x: hidden';
-    document.body.className = '';
-    setBackgroundClass('');
-  };
-
-  const changeBackgroundImage = (className) => {
-    // setBackgroundClass('');
-
-    setBackgroundClass(className);
+    document.body.style = "overflow-x: hidden; background: " + newThemeColor;
+    document.body.className = "";
+    setBackgroundClass("");
   };
 
   const value = {
     theme,
     changeTheme,
-    changeBackgroundImage,
   };
 
   return (

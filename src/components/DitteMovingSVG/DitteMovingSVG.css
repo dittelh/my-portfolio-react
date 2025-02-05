@@ -13,6 +13,8 @@ svg {
   align-items: flex-end;
   justify-content: flex-end;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .smoke-wrap {
@@ -139,7 +141,6 @@ svg {
     max-width: 30vw;
   }
 }
-
 
 @media only screen and (min-height: 667px) {
   svg {

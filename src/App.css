@@ -1,25 +1,36 @@
 @font-face {
   font-family: Jura;
-  src: url('./assets/fonts/JURA-VARIABLEFONT_WGHT.TTF');
+  src: url("./assets/fonts/JURA-VARIABLEFONT_WGHT.TTF");
 }
 
 @font-face {
   font-family: Inter;
-  src: url('./assets/fonts/Inter-Regular.ttf');
+  src: url("./assets/fonts/Inter-Regular.ttf");
 }
 
 @font-face {
   font-family: InterSemiBoldItalic;
-  src: url('./assets/fonts/inter-semi-bold-italic.otf');
+  src: url("./assets/fonts/inter-semi-bold-italic.otf");
+}
+
+@font-face {
+  font-family: InterThin;
+  src: url("./assets/fonts/Inter_18pt-Thin.ttf");
+}
+
+@font-face {
+  font-family: InterThinItalic;
+  src: url("./assets/fonts/Inter_18pt-ThinItalic.ttf");
 }
 
 body {
   transition: background-color 0.5s ease;
-  /* overflow: hidden; */
+  overflow-x: hidden !important;
+  padding-top: 10px !important;
 }
 
 .container {
-  width: 90vw;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
 }
@@ -30,7 +41,7 @@ body {
 }
 
 .h2-custom {
-  font-size: 4rem;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
 }
@@ -53,36 +64,6 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.blob-green {
-  background-color: #c7edbe;
-}
-
-.blob-purple {
-  background-color: #d1c3ee;
-}
-
-.blob {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Inter;
-  width: 9rem;
-  height: 7rem;
-  border-width: 0;
-  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-  overflow: hidden;
-  animation: morph 7s linear infinite;
-  color: black;
-  
-}
-
-.blob:hover {
-  font-weight: 900;
-  cursor: pointer;
 }
 
 @keyframes morph {
@@ -110,4 +91,33 @@ a {
   body {
     padding: 0 9rem;
   }
+}
+
+/* The shadows are for Tools and for Experience */
+
+.scrollTopShadow {
+  box-shadow: 1px 200px 22px -200px rgba(201, 201, 201, 1) inset;
+  -webkit-box-shadow: 1px 200px 22px -200px rgba(201, 201, 201, 1) inset;
+  -moz-box-shadow: 1px 200px 22px -200px rgba(201, 201, 201, 1) inset;
+}
+
+.scrollBottomShadow {
+  box-shadow: 1px -200px 22px -200px rgba(201, 201, 201, 1) inset;
+  -webkit-box-shadow: 1px -200px 22px -200px rgba(201, 201, 201, 1) inset;
+  -moz-box-shadow: 1px -200px 22px -200px rgba(201, 201, 201, 1) inset;
+}
+
+.scrollTopAndBottomShadow {
+  box-shadow: 1px 200px 22px -200px rgba(201, 201, 201, 1) inset,
+    1px -200px 22px -200px rgba(201, 201, 201, 1) inset;
+  -webkit-box-shadow: 1px 200px 22px -200px rgba(201, 201, 201, 1) inset,
+    1px -200px 22px -200px rgba(201, 201, 201, 1) inset;
+  -moz-box-shadow: 1px 200px 22px -200px rgba(201, 201, 201, 1) inset,
+    1px -200px 22px -200px rgba(201, 201, 201, 1) inset;
+}
+
+.noScrollShadow {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }

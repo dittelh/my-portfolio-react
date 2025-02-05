@@ -13,11 +13,8 @@
   top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: fade-in 2s;
+  animation: fade-in 1.5s;
   z-index: 10;
-}
-
-.backBtnPurple {
   background-color: #664f98;
 }
 
@@ -58,7 +55,7 @@
 }
 
 .buddysImg {
-  background-image: url('../../../assets/img/buddys.svg');
+  background-image: url("../../../assets/img/buddys.svg");
   width: 80vw;
   height: 65vw;
   background-repeat: no-repeat;
@@ -68,11 +65,11 @@
 }
 
 .buddysImg:hover {
-  background-image: url('../../../assets/img/buddysDarker.svg');
+  background-image: url("../../../assets/img/buddysDarker.svg");
 }
 
 .tipsKuponImg {
-  background-image: url('../../../assets/img/tipsKupon.svg');
+  background-image: url("../../../assets/img/tipsKupon.svg");
   width: 80vw;
   height: 65vw;
   background-repeat: no-repeat;
@@ -83,11 +80,11 @@
 }
 
 .tipsKuponImg:hover {
-  background-image: url('../../../assets/img/tipsKuponDark.svg');
+  background-image: url("../../../assets/img/tipsKuponDark.svg");
 }
 
 .froggImg {
-  background-image: url('../../../assets/img/frogg.svg');
+  background-image: url("../../../assets/img/frogg.svg");
   width: 80vw;
   height: 65vw;
   background-repeat: no-repeat;
@@ -98,11 +95,11 @@
 }
 
 .froggImg:hover {
-  background-image: url('../../../assets/img/froggDarker.svg');
+  background-image: url("../../../assets/img/froggDarker.svg");
 }
 
 .todosImg {
-  background-image: url('../../../assets/img/todos.svg');
+  background-image: url("../../../assets/img/todos.svg");
   width: 80vw;
   height: 65vw;
   background-repeat: no-repeat;
@@ -113,7 +110,7 @@
 }
 
 .todosImg:hover {
-  background-image: url('../../../assets/img/todosDarker.svg');
+  background-image: url("../../../assets/img/todosDarker.svg");
 }
 
 .title {
@@ -159,19 +156,6 @@
   font-weight: 900;
 }
 
-.purpleBackground {
-  background-image: url('../../../assets/img/purplePhone.svg');
-  background-size: cover;
-  z-index: -10;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 175%;
-  animation: slide-from-bottom 0.5s;
-  overflow: hidden;
-}
-
 @media only screen and (min-width: 768px) {
   .projectsContainer {
     display: flex;
@@ -182,7 +166,7 @@
   }
 
   .buddysImg {
-    background-image: url('../../../assets/img/buddys.svg');
+    background-image: url("../../../assets/img/buddys.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;
@@ -192,7 +176,7 @@
   }
 
   .tipsKuponImg {
-    background-image: url('../../../assets/img/tipsKupon.svg');
+    background-image: url("../../../assets/img/tipsKupon.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;
@@ -203,7 +187,7 @@
   }
 
   .froggImg {
-    background-image: url('../../../assets/img/frogg.svg');
+    background-image: url("../../../assets/img/frogg.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;
@@ -214,7 +198,7 @@
   }
 
   .todosImg {
-    background-image: url('../../../assets/img/todos.svg');
+    background-image: url("../../../assets/img/todos.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;
@@ -246,7 +230,6 @@
   }
 }
 
-
 @media only screen and (min-width: 1300px) {
   .projectsContainer {
     display: flex;
@@ -257,7 +240,7 @@
   }
 
   .buddysImg {
-    background-image: url('../../../assets/img/buddys.svg');
+    background-image: url("../../../assets/img/buddys.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;
@@ -267,7 +250,7 @@
   }
 
   .tipsKuponImg {
-    background-image: url('../../../assets/img/tipsKupon.svg');
+    background-image: url("../../../assets/img/tipsKupon.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;
@@ -278,7 +261,7 @@
   }
 
   .froggImg {
-    background-image: url('../../../assets/img/frogg.svg');
+    background-image: url("../../../assets/img/frogg.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;
@@ -289,7 +272,7 @@
   }
 
   .todosImg {
-    background-image: url('../../../assets/img/todos.svg');
+    background-image: url("../../../assets/img/todos.svg");
     width: 80vw;
     height: 15vw;
     background-repeat: no-repeat;

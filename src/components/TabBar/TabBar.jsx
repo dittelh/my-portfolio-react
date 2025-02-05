@@ -1,52 +1,50 @@
-import React, { useState, useRef, useEffect, useContext } from 'react';
-import './TabBar.css';
-import { ThemeContext } from '../../contexts/ThemeContext';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState, useRef, useEffect, useContext } from "react";
+import "./TabBar.css";
+import { ThemeContext } from "../../contexts/ThemeContext";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const TabBar = () => {
   const theme = useContext(ThemeContext);
   const navigate = useNavigate();
   const location = useLocation();
 
-  const hideTabBar =
-    location.pathname === '/tools-details' ||
-    location.pathname === '/projects-details';
+  const hideTabBar = location.pathname === "/projects-details";
 
   const allTabs = [
     {
-      id: 'home',
-      name: 'Home',
-      backgroundColor: 'rgba(147, 163, 252, 0.74)',
-      focusColor: 'rgba(46, 75, 245, 1)',
-      themeColor: 'rgba(231, 233, 248, 1)',
-      route: '/',
+      id: "home",
+      name: "Home",
+      backgroundColor: "rgba(147, 163, 252, 0.74)",
+      focusColor: "rgba(46, 75, 245, 1)",
+      themeColor: "rgba(231, 233, 248, 1)",
+      route: "/",
       tabIndex: 0,
     },
     {
-      id: 'tools',
-      name: 'Tools',
-      backgroundColor: 'rgba(206, 239, 198, 0.8)',
-      focusColor: 'rgba(102, 186, 81, 1)',
-      themeColor: 'rgba(242, 250, 240, 1)',
-      route: '/tools',
+      id: "tools",
+      name: "Tools",
+      backgroundColor: "rgba(206, 239, 198, 0.8)",
+      focusColor: "rgba(102, 186, 81, 1)",
+      themeColor: "rgba(242, 250, 240, 1)",
+      route: "/tools",
       tabIndex: 1,
     },
     {
-      id: 'projects',
-      name: 'Projects',
-      backgroundColor: 'rgba(211, 198, 239, 1)',
-      focusColor: 'rgba(102, 79, 152, 1)',
-      themeColor: 'rgba(237, 233, 245, 1)',
-      route: '/projects',
+      id: "experience",
+      name: "experience",
+      backgroundColor: "rgba(211, 198, 239, 1)",
+      focusColor: "rgba(102, 79, 152, 1)",
+      themeColor: "rgba(237, 233, 245, 1)",
+      route: "/experience",
       tabIndex: 2,
     },
     {
-      id: 'contact',
-      name: 'Contact',
-      backgroundColor: 'rgba(244, 107, 107, 1)',
-      focusColor: 'rgba(203, 20, 20, 1)',
-      themeColor: 'rgba(248, 225, 225, 1)',
-      route: '/contact',
+      id: "contact",
+      name: "Contact",
+      backgroundColor: "rgba(244, 107, 107, 1)",
+      focusColor: "rgba(203, 20, 20, 1)",
+      themeColor: "rgba(248, 225, 225, 1)",
+      route: "/contact",
       tabIndex: 3,
     },
   ];
@@ -56,9 +54,9 @@ const TabBar = () => {
     allTabs.find((tab) => tab.route === location.pathname)?.tabIndex !==
       undefined
       ? allTabs.find((tab) => tab.route === location.pathname)?.tabIndex
-      : location.pathname.includes('projects')
+      : location.pathname.includes("experience")
       ? 2
-      : location.pathname.includes('tools')
+      : location.pathname.includes("tools")
       ? 1
       : 0
   );
@@ -73,27 +71,22 @@ const TabBar = () => {
     };
 
     const tab = allTabs.find((tab) => tab.tabIndex === activeTabIndex);
-    if (!location.pathname.includes('tools') && !location.pathname.includes('project')) {
-      theme.changeTheme(tab.id, tab.themeColor);
-    }
+    theme.changeTheme(tab.id, tab.themeColor);
 
     setTimeout(() => {
       setTabPosition();
     }, 60);
-    
   }, [activeTabIndex, location.pathname]);
 
   const handleTabClick = (index, tab) => {
     setActiveTabIndex(index);
-    if (!location.pathname.includes('tools') && !location.pathname.includes('project')) {
-      theme.changeTheme(tab.id, tab.themeColor);
-    }
+    theme.changeTheme(tab.id, tab.themeColor);
     navigate(tab.route, { state: { prevLocation: location.pathname } });
   };
 
   return (
     <div
-      className={'sliding-tab-bar ' + (hideTabBar ? 'hideTabBar' : '')}
+      className={"sliding-tab-bar " + (hideTabBar ? "hideTabBar" : "")}
       style={{ backgroundColor: allTabs[activeTabIndex].backgroundColor }}
     >
       <div
@@ -110,7 +103,7 @@ const TabBar = () => {
           <button
             key={index}
             ref={(el) => (tabsRef.current[index] = el)}
-            className={`tab-button ${isActive ? 'active' : ''}`}
+            className={`tab-button ${isActive ? "active" : ""}`}
             onClick={() => handleTabClick(index, tab)}
           >
             {tab.name}
